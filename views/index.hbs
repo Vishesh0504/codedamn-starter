@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href ="index.css"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL shortner</title>
+</head>
+<body>
+        <header>
+            <h2>URL shortner</h2>
+        </header>
+
+        <form action="/shortURL" method="post" >
+            <input type='text' name='fullUrl' placeholder="Enter the url to be shortened"/>
+            <button type="Submit" >Submit</button>
+        </form>
+
+        <section>
+            The shortened URL is:<a href="/{{shortURL}}">  /{{shortURL}}</a>
+        </section>
+</body>
+</html>
